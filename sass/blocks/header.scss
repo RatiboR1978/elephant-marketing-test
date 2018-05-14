@@ -180,10 +180,11 @@
   }
 
   &__nav-item-new:before {
+    width: 24px;
     position: absolute;
     content: 'NEW';
-    top: 25%;
-    left: 66%;
+    top: 28%;
+    left: 63%;
     color: #01f97f;
     transform: rotate(25deg);
     border-top: 1px solid;
@@ -195,14 +196,14 @@
     }
     @media (min-width: 1270px) {
       top: -10px;
-      right: -15px;
+      left: 78px;
     }
   }
 
   &__nav-item-new:hover:before {
     top: 38%;
-    @media (min-width: 730px) {
-      top: 38%;
+    @media (min-width: 1280px) {
+      top: -10px;
     }
   }
 
@@ -241,7 +242,7 @@
       transition-property: background-color, padding;
       transition-duration: .5s;
     }
-    a:hover {
+    li:hover a {
       background-color: #8806c0;
       color: white;
       padding: 15px 0;

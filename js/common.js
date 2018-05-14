@@ -1,5 +1,5 @@
 $(function () {
-    $('.header-page__btn').click(function() {
+    $('.header-page__input').click(function() {
         var elem = $(this);
 
         elem.toggleClass('header-page__btn--active');
