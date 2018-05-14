@@ -1,0 +1,254 @@
+.about {
+  margin-left: 120px;
+  margin-top: 214px;
+  max-width: 321px;
+}
+
+.about__me {
+  max-width: 321px;
+  img {
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-family: rufina-bold-webfont, Arial, sans-serif;
+    font-size: 36px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #707070;
+  }
+}
+
+.about__span-me {
+  font-size: 13px;
+  color: #898989;
+  position: relative;
+  display: block;
+}
+
+.about__span-me::before {
+  content: '';
+  position: absolute;
+  width: 81px;
+  height: 2px;
+  background-color: #c4c4c4;
+  top: 14px;
+  left: 0;
+}
+
+.about__social-links {
+  position: relative;
+  li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.about__social-links::after {
+  content: 'Follow';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 13px;
+  color: #898989;
+}
+
+.about__subscribe {
+  margin-top: 60px;
+  background-color: #f5f5f5;
+  padding: 60px 19px 45px;
+  max-width: 321px;
+  h4 {
+    font-family: rufina-bold-webfont, Arial, sans-serif;
+    font-size: 18px;
+  }
+  input {
+    max-width: 169px;
+    height: 36px;
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    font-family: quattrocento_sansitalic, Arial, sans-serif;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  button {
+    width: 91px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: -3px;
+    cursor: pointer;
+  }
+}
+
+.about__posts {
+  max-width: 321px;
+  margin-top: 60px;
+}
+
+.about__posts-title {
+  position: relative;
+}
+
+.about__posts-title,
+.about__categories-title,
+.about__tags-title,
+.about__instagram {
+  font-family: rufina-bold-webfont, Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
+.about__posts-title::before,
+.about__categories-title::before,
+.about__tags-title::before,
+.about__instagram::before {
+  content: '';
+  position: absolute;
+  width: 322px;
+  height: 2px;
+  background-color: #c4c4c4;
+  top: 42px;
+  left: 0;
+}
+
+.about__link-categories {
+  font-family: quattrocento_sansitalic, Arial, sans-serif;
+  font-size: 12px;
+  color: #898989;
+  position: relative;
+}
+
+.about__link-categories::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 2px;
+  background-color: #c4c4c4;
+  top: 14px;
+  left: 0;
+}
+
+.about__post-title {
+  a {
+    font-family: rufina-bold-webfont, Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.about__time {
+  margin-top: 40px;
+  font-size: 13px;
+  margin-bottom: 45px;
+  span {
+    color: #898989;
+  }
+}
+
+.about__instagram {
+  max-width: 321px;
+  position: relative;
+  margin-bottom: 45px;
+  h3 {
+    margin-bottom: 45px;
+  }
+}
+
+.about__instagram-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__categories {
+  max-width: 321px;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      padding-left: 10px;
+      list-style-type: none;
+      line-height: 34px;
+      a {
+        color: black;
+      }
+    }
+    li:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+  }
+}
+
+.about__categories-title {
+  position: relative;
+}
+
+.about__blog {
+  max-width: 321px;
+  height: 399px;
+  background: url("../img/bg-blog.jpg") no-repeat;
+  text-align: center;
+  font-family: quattrocento_sansbold, Arial, sans-serif;
+  position: relative;
+  margin-bottom: 45px;
+  h3 {
+    padding-top: 150px;
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+    font-size: 30px;
+    color: #636363;
+  }
+}
+
+.about__blog::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid #ffc600;
+  border-right: 150px solid transparent;
+  bottom: 0;
+  left: 0;
+}
+
+.about__blog::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 150px solid #ffc600;
+  border-left: 150px solid transparent;
+  top: 0;
+  right: 0;
+}
+
+.about__tags-title {
+  position: relative;
+}
+
+.about__tag {
+  color: #252525;
+  font-size: 16px;
+  line-height: 30px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.about__tag::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 26px;
+  background: url("../img/apsrf.png") no-repeat;
+  top: -3px;
+  right: -18px;
+}

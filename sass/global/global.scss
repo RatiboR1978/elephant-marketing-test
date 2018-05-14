@@ -1,0 +1,42 @@
+body {
+  position: relative;
+  font-family: quattrocento_sansregular, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #011226;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrap {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  @media (min-width: 1270px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.container {
+  max-width: 1270px;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media (min-width: 730px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
