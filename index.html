@@ -66,18 +66,17 @@
     </a>
     </div>
         <div class="header-page__languages wrap">
-    <div class="header-page__languages-wrap">
-    <div class="header-page__active-link"><a href="#"><div class="header-page__icon header-page__icon-uk"></div>En</a></div>
-    <ul class="header-page__dropdown">
-        <li><a href="#"><div class="header-page__icon header-page__icon-uk"></div>En</a></li>
-        <li><a href="#"><div class="header-page__icon header-page__icon-russiaflag"></div>Ru</a></li>
-        <li><a href="#"><div class="header-page__icon header-page__icon-brazil"></div>Br</a></li>
-        <li><a href="#"><div class="header-page__icon header-page__icon-southkorea"></div>Kor</a></li>
-        <li><a href="#"><div class="header-page__icon header-page__icon-japanflag"></div>Jp</a></li>
-    </ul>
-    </div>
-    <div class="header-page__select"></div>
-    </div>
+          <div class="header-page__languages-wrap">
+            <div class="header-page__active-link"><a href="#"><div class="header-page__icon header-page__icon-uk"></div>En</a></div>
+            <ul class="header-page__dropdown">
+              <li><a href="indexRu.html"><div class="header-page__icon header-page__icon-russiaflag"></div>Ru</a></li>
+              <li><a href="indexBr.html"><div class="header-page__icon header-page__icon-brazil"></div>Br</a></li>
+              <li><a href="indexKr.html"><div class="header-page__icon header-page__icon-southkorea"></div>Kr</a></li>
+              <li><a href="indexJp.html"><div class="header-page__icon header-page__icon-japanflag"></div>Jp</a></li>
+            </ul>
+            </div>
+            <div class="header-page__select"></div>
+          </div>
       </div>
       <div class="header-page__right wrap">
         <nav class="header-page__nav">
@@ -90,32 +89,41 @@
     </nav>
         <div class="header-page__buttons wrap">
           <a href="#" class="header-page__announcements"></a>
-          <a href="#" class="header-page__buttons-item">Log in</a>
+          <a href="#modal-js" class="header-page__buttons-item login-js">Log in</a>
           <a href="#" class="header-page__buttons-item header-page__green">Whitepaper</a>
-          <a href="#" class="header-page__login">Log in</a>
+          <a href="#modal-js" class="header-page__login">Log in</a>
         </div>
       </div>
     </div>
+  </header>
+  <section>
     <nav class="header-page__menu-mob">
       <ul class="header-page__list-mob">
-        <li class="header-page__nav-item-new"><a href="index.html">Evaluation</a></li>
-        <li><a href="services.html">Coin</a></li>
-        <li><a href="blog.html">Team</a></li>
-        <li><a href="portfolio.html">Faq</a></li>
-        <li><a href="portfolio.html">Videos</a></li>
-        <li><a href="index.html">News</a></li>
-        <li><a href="services.html">Announcements</a></li>
-        <li><a href="blog.html">Log in</a></li>
-        <li><a href="portfolio.html">Whitepaper</a></li>
-        <li><a href="portfolio.html">Lightpaper</a></li>
-        <li><a href="index.html">Presentation</a></li>
-        <li><a href="services.html">One pager</a></li>
-        <li><a href="blog.html">Poger</a></li>
-        <li><a href="portfolio.html">Coin Auditing</a></li>
-        <li><a href="portfolio.html">contact</a></li>
+        <li class="header-page__nav-item-new"><a href="index.html" class="header-page__mob-link">Evaluation</a></li>
+        <li><a href="#" class="header-page__mob-link">Coin</a></li>
+        <li><a href="#" class="header-page__mob-link">Team</a></li>
+        <li><a href="#" class="header-page__mob-link">Faq</a></li>
+        <li><a href="#" class="header-page__mob-link">Videos</a></li>
+        <li><a href="#" class="header-page__mob-link">News</a></li>
+        <li><a href="#" class="header-page__mob-link">Announcements</a></li>
+        <li><a href="#modal-js" class="header-page__mob-link header-page__login-link">Log in</a></li>
+        <li><a href="#" class="header-page__mob-link"><span class="header-page__flagEn">Whitepaper</span></a></li>
+        <li><a href="#" class="header-page__mob-link"><span class="header-page__flagEn">Lightpaper</span></a></li>
+        <li><a href="#" class="header-page__mob-link">Presentation</a></li>
+        <li><a href="#" class="header-page__mob-link">One pager</a></li>
+        <li><a href="#" class="header-page__mob-link">Poger</a></li>
+        <li><a href="#" class="header-page__mob-link">Coin Auditing</a></li>
+        <li><a href="#" class="header-page__mob-link">contact</a></li>
       </ul>
     </nav>
-  </header>
+  </section>
+  <section class="image"></section>
+  <div class="overlay"></div>
+  <div class="modal" id="modal-js">
+    <h2>Modal Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aut officiis eaque itaque repudiandae nemo, ea praesentium ullam tempora nisi numquam harum accusamus nihil, animi iure minus quasi labore doloremque.</p>
+    <a href="#" class="btn">Close</a>
+  </div>
   <script src="js/libs.min.js"></script>
   <script src="js/common.js"></script>
 </body>

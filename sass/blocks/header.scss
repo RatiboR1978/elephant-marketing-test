@@ -5,8 +5,15 @@
     justify-content: space-between;
   }
 
+  &__left {
+    align-items: center;
+  }
+
+  &__right {
+    align-items: center;
+  }
+
   &__languages {
-    margin-top: 11px;
     margin-left: 10px;
     a {
       color: white;
@@ -74,16 +81,25 @@
   }
 
   &__dropdown {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    background-color: #011226;
     display: none;
     padding: 7px;
     margin: 0;
     list-style-type: none;
+    z-index: 100;
     li {
-      width: 50px;
+      width: 71px;
       margin-bottom: 10px;
     }
+
     li:last-child {
       margin-bottom: 0;
+    }
+    li:hover a {
+      color: #01f97f;
     }
   }
 
@@ -200,13 +216,6 @@
     }
   }
 
-  &__nav-item-new:hover:before {
-    top: 38%;
-    @media (min-width: 1280px) {
-      top: -10px;
-    }
-  }
-
   &__wrap-mob {
     @media (min-width: 1270px) {
       display: none;
@@ -232,21 +241,33 @@
       background-color: #fff;
       display: block;
     }
-    a {
-      background-color: #fff;
-      display: block;
-      color: #8806c0;
-      font-weight: 600;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition-property: background-color, padding;
-      transition-duration: .5s;
+
+     a {
+       transition-property: color;
+       transition-duration: .5s;
     }
+
     li:hover a {
-      background-color: #8806c0;
-      color: white;
-      padding: 15px 0;
+      color: #01f97f;
     }
+  }
+
+  &__mob-link {
+    background-color: #fff;
+    display: block;
+    color: #8806c0;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-property: background-color, padding;
+    transition-duration: .5s;
+  }
+
+  &__login-link {
+    background-color: #8806c0;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   &__input {
@@ -286,10 +307,59 @@
       top: 20px;
     }
   }
+
+  &__flagEn,
+  &__flagBr,
+  &__flagKr,
+  &__flagJp,
+  &__flagRu {
+    position: relative;
+  }
+
+  &__flagEn:before,
+  &__flagBr:before,
+  &__flagKr:before,
+  &__flagJp:before,
+  &__flagRu:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    top: 2px;
+    left: -14px;
+  }
+
+  &__flagEn:before {
+    background-image: url(../img/sprite.png);
+    background-position: -39px -51px;
+  }
+
+  &__flagRu:before {
+    background-image: url(../img/sprite.png);
+    background-position: 0px -51px;
+  }
+
+  &__flagBr:before {
+    background-image: url(../img/sprite.png);
+    background-position: -54px -20px;
+  }
+
+  &__flagKr:before {
+    background-image: url(../img/sprite.png);
+    background-position: -21px -51px;
+  }
+
+  &__flagJp:before {
+    background-image: url(../img/sprite.png);
+    background-position: -54px -33px;
+  }
 }
 
 #logo {
   width: 111px;
+  height: 48px;
   @media (min-width: 730px) {
     width: 121px;
   }
