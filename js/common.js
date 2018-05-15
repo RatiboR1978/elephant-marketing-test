@@ -19,23 +19,18 @@ $(function () {
         }
     }
 
-    $(".login-js, .header-page__login, .header-page__login-link").on("click", function(e) {
+    $('.login-js, .header-page__login, .header-page__login-link').on('click', function(e) {
         e.preventDefault();
         var currentModal = $(this).attr("href");
 
-        $(currentModal + ", .overlay").fadeIn(500);
-        $("body").addClass("open-modal");
+        $(currentModal + ', .overlay').fadeIn(500);
+        $('body').addClass('open-modal');
     });
 
 
     $(".overlay, .btn").on("click", function(e) {
         e.preventDefault();
-        $(".modal, .overlay").fadeOut(100);
-        $("body").removeClass("open-modal");
+        $('.modal, .overlay').fadeOut(100);
+        $('body').removeClass('open-modal');
     });
-
-
-
-
-
 });
